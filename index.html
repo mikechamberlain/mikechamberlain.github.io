@@ -438,6 +438,15 @@
                 padding: 0 0 0 0;
                 width: 100%;
             }
+
+            /* disable animations */
+            .animated {
+                animation: none !important;
+            }
+
+            header, h2, h3, h4, p, li {
+                opacity: 1 !important;
+            }
         }
 
         @media (min-width: 550px), print {
@@ -513,14 +522,8 @@
             opacity: 0;
         }
 
-        @media print {
-            .animated {
-                animation: none !important;
-            }
-
-            header, h2, h3, h4, p, li {
-                opacity: 1 !important;
-            }
+        .obsolete-skill {
+            text-decoration: line-through;
         }
     </style>
     <style>
@@ -573,7 +576,7 @@
 <div class="row">
     <div class="three columns"><h3>Core skills</h3></div>
     <div class="nine columns">
-        <p>Javascript with Angular, .NET with C#, CSS. Agile dev lead.</p>
+        <p>Javascript with Angular, .NET with C#, CSS. Agile dev lead. TDD.</p>
     </div>
 </div>
 <div class="row">
@@ -610,8 +613,12 @@
     <div class="nine columns">
         <p>Experience to some level with Java, Python, Angular 2, C, Objective-C, OpenGL, Bash script, Powershell,
             RabbitMQ,
-            AWS, OpenID Connect.<br/>
-            <span class="subdued">Obsolete: Classic ASP, Flash, Silverlight.</span></p>
+            AWS, OpenID Connect.
+            <span class="subdued">Obsolete:
+                <span class="obsolete-skill">Classic ASP</span>,
+                <span class="obsolete-skill">Flash</span>,
+                <span class="obsolete-skill">Silverlight</span>.
+            </span></p>
     </div>
 </div>
 
