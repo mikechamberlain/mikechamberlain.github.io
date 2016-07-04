@@ -512,6 +512,15 @@
         header, h2, h3, h4, p, li {
             opacity: 0;
         }
+
+        @media print {
+            .animated {
+                animation: none !important;
+            }
+            header, h2, h3, h4, p, li {
+                opacity: 1 !important;
+            }
+        }
     </style>
     <style>
         /*!
@@ -525,20 +534,6 @@
         .animated {
             animation-duration: 1s;
             animation-fill-mode: both;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .fadeIn {
-            animation-name: fadeIn;
         }
 
         @keyframes fadeInLeft {
@@ -690,6 +685,7 @@
             <li>Completed integration with 10 different in-house and third-party applications, platforms
                 and services.
             </li>
+            <li>Achieved a smooth and delightful user expeerience by designing and mplementing CSS animations and transitions.</li>
             <li>Team nominated for yearly Enterprise Technology award.</li>
             <li>Personally received monthly workplace recognition award.</li>
         </ul>
